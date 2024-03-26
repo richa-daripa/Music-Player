@@ -58,7 +58,7 @@ const songsList=[
 //Format Time
 const timeformat=(time_input)=>{
     let min = Math.floor(time_input / 60);
-    min = min < 10 ? "0" + min : min;
+    min = min < 10 ? "0" + min : min;  //if value of min is less than 10 then it adds a leading zero to the minutes
     let sec = Math.floor(time_input % 60);
     sec = sec < 10 ? "0" + sec : sec;
     return `${min}:${sec}`;    
