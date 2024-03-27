@@ -35,7 +35,7 @@ body{
     padding-bottom: 10px;
 }
 .player-options{
-    background-color: rgb(73, 74, 74);
+    background-color: rgb(54, 55, 55);
     max-width: 500px;
     width: 400px;
     height: 40px;
@@ -60,12 +60,12 @@ body{
 }
 #prev,#next{
     font-size: 20px;
-    color: #b2aeae;
+    color: #c1bebe;
     position: relative;
 }
 #shuffle,#repeat{
     font-size: 20px;
-    color: #b2aeae;
+    color: #c1bebe;
     position: relative;/* for adding tooltip*/
 }
 
@@ -123,8 +123,8 @@ input[type="range"] {
     accent-color:rgb(83, 137, 238); 
 }
 /*-------------------------------------------playlist--------------------------------------*/
-#menu{
-    color: #b2aeae;
+#stop, #menu{
+    color: #c1bebe;
     font-size: 17px;
     position: relative;
 }
@@ -155,12 +155,12 @@ input[type="range"] {
 #playlist-song .arrange {
     display: flex;
     align-items: center; /* This will vertically center the text with the image */
-    width: 100%; /* Adjust as needed */
+    width: 100%; 
     margin: 2% 5px auto;
 }
 #playlist-song .arrange img {
-    width: 50px; /* Adjust as needed */
-    height: 50px; /* Adjust as needed */
+    width: 50px; 
+    height: 50px; 
     margin-right: 10px; /* Creates some space between the image and the text */   
 }
 #playlist-song .arrange p span{
@@ -180,17 +180,30 @@ input[type="range"] {
     bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #095870;
+    background-color: #14637c;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
     white-space: nowrap;
     font-size: 13px;
+    font-family: 'Poppins', sans-serif;
 }
 
-#stop{
-    color: #b2aeae;
-    font-size: 17px;
-    position: relative;
-}
-
+/*responsive*/
+@media screen and (max-width: 600px){
+    #song-img{
+        margin-top: 30%;
+    }
+    #song-name{
+        margin-top: 15%;
+    }
+    #song-artist{
+        margin-bottom: 20%;
+    }
+    .player-options{
+        margin-top: 15%;
+    }
+    .volume{
+        margin:2% 10%;
+    }
+}   

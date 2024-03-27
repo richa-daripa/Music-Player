@@ -143,7 +143,7 @@ audio.onended=()=>{
 
 shufflebtn.addEventListener('click', function() {
     shuffle = !shuffle;
-    console.log("Shuffle status: " + shuffle);
+    //console.log("Shuffle status: " + shuffle);
     if(shuffle==true) 
     shufflebtn.setAttribute('data-tooltip', 'Shuffle : on');
     else
